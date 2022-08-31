@@ -2,11 +2,11 @@ import React from "react";
 
 class DefinitionItem extends React.Component {
   render() {
-    const { data } = this.props;
+    const { ...data } = this.props;
     return (
       <>
-        <dt key={data.id}>{data.dt}</dt>
-        <dd>{data.dd}</dd>
+        <dt key={data.id}>{data.tittle}</dt>
+        <dd>{data.description}</dd>
       </>
     );
   }
